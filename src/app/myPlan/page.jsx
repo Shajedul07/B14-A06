@@ -3,7 +3,7 @@ import React from 'react';
 const MyPlanPage = () => {
     return (
         <div>
-            This is my plan Page
+            <h1>This is my plan</h1>
         </div>
     );
 };

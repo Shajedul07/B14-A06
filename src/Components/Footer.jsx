@@ -3,8 +3,8 @@ import Logo from '../../public/logo.png'
 import Image from 'next/image'
 const Footer = () => {
     return (
-        <div className='container mx-auto mt-4 bg-[#15171d] p-5'>
-            <div className='flex gap-2'>
+        <div className=' mt-4 bg-[#15171d] p-8'>
+            <div className='flex gap-2 container mx-auto'>
                 <Image
                     src={Logo}
                     alt='FitLog Logo' 
