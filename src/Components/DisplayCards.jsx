@@ -8,7 +8,7 @@ export default function DisplayCards({ card }) {
         <div className=" overflow-hidden rounded-[14px] border border-transparent bg-[#17181c] text-white shadow-lg transition-all duration-300 ease-in-out hover:-translate-y-2 hover:border-[#c8ff00] hover:shadow-[0_8px_30px_rgba(200,255,0,0.15)]">
             
             {/* Exercise Image */}
-            <div className="relative h-[164px] w-full overflow-hidden">
+            <div className="relative h-41 w-full overflow-hidden">
                 <Image
                     src={card.image}
                     alt={card.name}
@@ -27,7 +27,7 @@ export default function DisplayCards({ card }) {
                     {card.muscleGroups.map((muscle) => (
                         <span
                             key={muscle}
-                            className="rounded-full bg-[#c8ff00] px-3 py-[3px] text-[10px] font-extrabold uppercase leading-[14px] text-black"
+                            className="rounded-full bg-[#c8ff00] px-3 py-0.75 text-[10px] font-extrabold uppercase leading-3.5 text-black"
                         >
                             {muscle}
                         </span>
