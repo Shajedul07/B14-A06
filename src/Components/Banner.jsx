@@ -34,7 +34,7 @@ const Banner = () => {
                     <Image
                         src={banner_image}
                         alt="Athlete exercising on gym equipment"
-                        className="h-[160px] w-full object-contain sm:h-[220px] md:h-[280px] lg:h-[340px] xl:h-[400px]"
+                        className="h-40 w-full object-contain sm:h-[220px] md:h-[280px] lg:h-[340px] xl:h-[400px]"
                     />
                 </div>
 
