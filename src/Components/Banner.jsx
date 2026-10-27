@@ -3,7 +3,7 @@ import banner_image from '../../public/banner.png';
 import Image from 'next/image'
 const Banner = () => {
     return (
-        <section className="container mx-auto w-full overflow-hidden rounded-lg border border-[#25262b] bg-[#15171d] ">
+        <section className="container  mx-auto w-full overflow-hidden rounded-lg border border-[#25262b] bg-[#15171d] ">
             <div className="container mx-auto flex  items-center justify-between px-6 py-6 sm:px-8 md:min-h-47.5 lg:min-h-100 md:px-12">
 
                 {/* Left Content */}
