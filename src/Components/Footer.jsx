@@ -7,10 +7,10 @@ const Footer = () => {
             <div className='flex gap-2'>
                 <Image
                     src={Logo}
-                    alt='FitLog Logo'
+                    alt='FitLog Logo' 
                 />
                 <div>
-                    <h3>FITLOG</h3>
+                    <h3 className='uppercase' >FITLOG </h3>
                 </div>
                 <div className='ms-auto text-white/30'>
                     <p>© 2026 FitLog — Workout Library. Train hard, log honest.</p>
