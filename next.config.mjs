@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
   cacheComponents: true,
-  partialPrefetching: true,
+  partialPrerendering: true,
   reactCompiler: true,
+
   turbopack: {
     rules: {
       "*.css": {
@@ -11,6 +11,16 @@ const nextConfig = {
         as: "*.css",
       },
     },
+  },
+
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "img.magnific.com",
+        pathname: "/**",
+      },
+    ],
   },
 };
 
