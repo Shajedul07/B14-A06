@@ -1,12 +1,14 @@
-
 "use client";
 
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../../public/logo.png";
 import NavLinks from "./NavLinks";
+import { useCardContext } from "@/context/CardContext";
 
 const NavBar = () => {
+  const { plan, saved } = useCardContext();
+
   return (
     <div className="container mx-auto navbar bg-base-100 shadow-sm">
       {/* Navbar Start */}
@@ -40,7 +42,7 @@ const NavBar = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow"
           >
             <li>
-              <NavLinks href="/">Workouts</NavLinks>
+              <NavLinks href="/" >Workouts</NavLinks>
             </li>
             <li>
               <NavLinks href="/myPlan">My Plan</NavLinks>
@@ -74,13 +76,23 @@ const NavBar = () => {
       </div>
 
       {/* Navbar End */}
-      <div className="navbar-end">
-        <Link href="/myPlan" className="btn">
-          My Plan
+      <div className="navbar-end gap-2">
+        <Link href="/myPlan" className="btn btn-sm gap-2">
+          Plan
+          <span className="badge bg-[#CCFF00] text-black">
+            {plan.length}
+          </span>
+        </Link>
+
+        <Link href="/myPlan" className="btn btn-sm gap-2">
+          Saved
+          <span className="badge">
+            {saved.length}
+          </span>
         </Link>
       </div>
     </div>
   );
 };
 
-export default NavBar;
+export default NavBar; 

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { getSingleCard } from "@/lib/api";
 import { notFound } from "next/navigation";
+import DetailsPageButton from "@/Components/DetalsPageButton";
 
 export default async function CardDetailsPage({ params }) {
     const { id } = await params;
@@ -106,21 +107,7 @@ export default async function CardDetailsPage({ params }) {
                     </div>
 
                     {/* Action Buttons */}
-                    <div className="mt-7 flex flex-wrap items-center gap-3">
-                        <button
-                            type="button"
-                            className="rounded-lg bg-[#c8ff00] px-5 py-3 text-sm font-bold text-black transition-all duration-300 hover:bg-[#d8ff4d] hover:shadow-[0_0_20px_rgba(200,255,0,0.15)] active:scale-95"
-                        >
-                            Add to today's plan
-                        </button>
-
-                        <button
-                            type="button"
-                            className="rounded-lg border border-[#363b45] px-5 py-3 text-sm font-medium text-gray-200 transition-all duration-300 hover:border-[#c8ff00] hover:text-[#c8ff00] active:scale-95"
-                        >
-                            Save for later
-                        </button>
-                    </div>
+                    <DetailsPageButton card ={singleCardData}/>
                 </section>
             </main>
         </div>

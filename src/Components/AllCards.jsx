@@ -8,7 +8,7 @@ const AllCards = async () => {
     return (
         <div className='container mx-auto mt-4'>
             <h1 className='font-bold text-2xl'>THE LIBRARY</h1>
-            <p className='text-white/30'>Twelve lifts covering every major muscle group.</p>
+            <p className='text-white/30 mb-5'>Twelve lifts covering every major muscle group.</p>
             <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5'>
                 {
                     data.map((card) => (
